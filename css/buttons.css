@@ -1,0 +1,12 @@
+.ban-btn {
+  background-color: navajowhite;
+  padding: 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+}
+
+.ban-btn:hover {
+  background-color: white;
+  color: navajowhite;
+}
