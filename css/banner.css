@@ -1,0 +1,28 @@
+
+.banner {
+ background-size: cover;
+ height: 800px;
+ width: 100%;
+ background-position: 50% 50%;
+ filter: brightness(50%);
+}
+
+
+.text-banner {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+
+span {
+  color: #870000;
+}
+
+.text-banner h1 {
+ font-size: 55px;
+}
