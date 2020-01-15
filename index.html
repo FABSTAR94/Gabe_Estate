@@ -9,73 +9,63 @@
 </head>
 
 <body>
-
-  <nav>
-   <ul class="list-inline">
-     <li><a href="#home">Home</a></li>
-     <li><a href="#about">About</a></li>
-     <li><a href="#contact">Contact</a></li>
-   </ul>
- </nav>
-
+    <nav>
+        <ul class="list-inline">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="custom-container">
         <div class="banner" style="background-image: url(images/baybridge.jpg);">
         </div>
         <div class="text-banner">
             <h1>Sell your House for Cash Fast!</h1>
             <p> We Buy homes anywhere in the <span>Bay Area</span><br>specialized in <span>Alameda</span> and contra costa <span>San Mateo Countys.</span> </p>
-            <button type="button" class="ban-btn">Get Cash Offer
+            <button type="button" class="ban-btn" data-toggle="modal" data-target="#staticBackdrop">Get Cash Offer
             </button>
-
+        </div>
         <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Leave your information and I will respond within 24 hours</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-
-
-
-
-
-                    <form>
-                      <div class="form-row">
-                         <div class="form-group col-md-6">
-                          <label for="inputname">Name</label>
-                          <input type="text" class="form-control" id="inputName1" >
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputEmail">Email</label>
-                          <input type="email" class="form-control" id="inputEmail" >
-                        </div>
-
-                      </div>
-                      <div class="form-group">
-                        <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress">
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-5">
-                          <label for="inputCity">City</label>
-                          <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-2">
-                          <label for="inputState">State</label>
-                          <select id="inputState" class="form-control">
-
-                            <option value="" selected="selected">Select a State</option>
-                              <!-- <option value="Alabama">AL</option>
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Leave your information and I will respond within 24 hours</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputname">Name</label>
+                                    <input type="text" class="form-control" id="inputName1">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control">
+                                        <option value="" selected="selected">Select a State</option>
+                                        <!-- <option value="Alabama">AL</option>
                               <option value="Alaska">AK</option>
                               <option value="Arizona">AZ</option>
                               <option value="Arkansas">AR</option> -->
-                              <option value="California">CA</option>
-                              <!-- <option value="CO">Colorado</option>
+                                        <option value="California">CA</option>
+                                        <!-- <option value="CO">Colorado</option>
                               <option value="CT">Connecticut</option>
                               <option value="DE">Delaware</option>
                               <option value="DC">District Of Columbia</option>
@@ -121,35 +111,30 @@
                               <option value="WV">West Virginia</option>
                               <option value="WI">Wisconsin</option>
                               <option value="WY">Wyoming</option> -->
-                          </select>
-                        </div>
-                        <div class="form-group col-md-5">
-                          <label for="inputZip">Zip</label>
-                          <input type="text" class="form-control" id="inputZip">
-                        </div>
-                              <div class="form-group col-12">
-                          <label for="inputMessage">Message</label>
-                                <br>
-                             <textarea id="inputMessage" class="form-control" name="inputMessage" rows="4" cols="56">
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="inputMessage">Message</label>
+                                    <br>
+                                    <textarea id="inputMessage" class="form-control" name="inputMessage" rows="4" cols="56">
                                 </textarea>
-                              </div>
-                        <div class="button-align">
-                        <div class="form-group col-md-2">
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                                <div class="button-align">
+                                    <div class="form-group col-md-2">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                        </form>
                     </div>
-                    </div>
-                    </form>
-
-
-
-
-
-
-
-
-
-             </div>
-              <div id="about" class="section">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="section">
         <div class="flex-container">
             <div class="about-section">
                 <img class="about-img" src="images/profile.jpeg" alt="buyer profile">
@@ -162,7 +147,6 @@
             </div>
         </div>
     </div>
-
     <div class="home" class="section">
         <div class="flex-container">
             <div class="home-section">
@@ -171,17 +155,15 @@
                     <p> We Buy homes in all kinds of neighborhoods <br>
                         We Buy homes in all kinds of neighborhoods. <br>
                         We Buy homes in all kinds of neighborhoods.
-                   </p>
+                    </p>
                     <a href="#" class="ban-btn">Get Cash Offer</a>
                 </div>
                 <img class="home-img" src="images/home.jpg" alt="house purchased">
             </div>
         </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
