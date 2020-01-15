@@ -1,5 +1,5 @@
 .modal-header {
-  background-color: maroon;
+  background-color: #E3170A;
   color: white;
   border-radius: 3px 3px !important;
 }
@@ -13,15 +13,15 @@ box-shadow:none !important;
 
 .btn-primary {
     color: #fff;
-    background-color: maroon !important;
-    border-color: maroon !important;
+    background-color: #E3170A !important;
+    border-color: #E3170A !important;
 }
 
 button.close{
   color: black;
 }
 .form-control:hover{
-border: 1px solid maroon !important;
+border: 1px solid #E3170A !important;
 outline: none;
 box-shadow:none !important;
 }

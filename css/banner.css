@@ -1,7 +1,7 @@
 
 .banner {
  background-size: cover;
- height: 800px;
+ height: 600px;
  width: 100%;
  background-position: 50% 50%;
  filter: brightness(50%);
@@ -20,7 +20,7 @@
 
 
 span {
-  color: #870000;
+  color: #E3170A;
 }
 
 .text-banner h1 {
