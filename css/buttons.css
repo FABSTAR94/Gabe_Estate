@@ -1,12 +1,15 @@
-.ban-btn {
-  background-color: navajowhite;
+.btn-danger {
+  background-color: #E3170A !important;
+  border-color: #E3170A;
   padding: 8px;
   border-radius: 3px;
   text-decoration: none;
   color: white;
 }
 
-.ban-btn:hover {
-  background-color: white;
-  color: navajowhite;
+.btn-danger:hover {
+  background-color: #E3170A !important;
+  color: white !important;
+  border-color: #E3170A;
+  opacity: 0.4 !important;
 }
