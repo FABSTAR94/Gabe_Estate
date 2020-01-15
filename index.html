@@ -126,7 +126,7 @@
                                 </div>
                                 <div class="button-align">
                                     <div class="form-group col-md-2">
-                                        <button type="submit" class="btn btn-primary" onclick="sendForm()">Submit</button>
+                                        <button type="submit" class="btn btn-primary" onclick="return sendForm(event)">Submit</button>
                                     </div>
                                 </div>
                         </form>
@@ -171,17 +171,20 @@
             "access_token": "5q0f6z0u28ro0caafydnvk1i"
         };
 
-        // function js_onSuccess() {
-        //     // remove this to avoid redirect
-        //     window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
-        // }
+        function js_onSuccess() {
+            // remove this to avoid redirect
+            window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+            alert("Your message has been sent.We will get back to you within 24 hours.");
 
-        // function js_onError(error) {
-        //     // remove this to avoid redirect
-        //     window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
-        // }
+        }
 
-        function sendForm() {
+        function js_onError(error) {
+            // remove this to avoid redirect
+            window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+            alert(`There has been an error ${error}`);
+        }
+
+        function sendForm(event) {
             const request = new XMLHttpRequest();
 
             request.onreadystatechange = function() {
@@ -205,7 +208,8 @@
                 message: document.getElementById('inputMessage').value,
             }
 
-            const message = JSON.stringify(customerInformation);
+            const message = `This is my information below. \n name: ${customerInformation.name} \n email: ${customerInformation.email} \n address: ${customerInformation.address} \n city: ${customerInformation.city} \n state: ${customerInformation.state} \n zip: ${customerInformation.zip} \n message: ${customerInformation.message}`;
+             console.log(message);
             data_js['subject'] = subject;
             data_js['text'] = message;
             const params = toParams(data_js);
@@ -215,7 +219,7 @@
 
             request.send(params);
 
-            return false;
+            event.preventDefault();
         }
 
         function toParams(data_js) {
