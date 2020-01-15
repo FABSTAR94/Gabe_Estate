@@ -1,2 +1,9 @@
 @import url("banner.css");
 @import url("buttons.css");
+@import url("navbar.css");
+
+
+body {
+  margin: 0;
+  letter-spacing: 1px;
+}
