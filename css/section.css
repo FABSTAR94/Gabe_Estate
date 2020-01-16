@@ -1,7 +1,7 @@
 .about-section {
-    display: flex;
-    /*margin: 30px 30px;*/
-    padding: 75px;
+    /*display: flex;*/
+    margin: 20px 20px;
+    padding: 50px;
     background-color: white;
 }
 
@@ -13,7 +13,7 @@
 
 
 .about-text {
-  padding-left: 50px;
+  padding-left: 30px;
   display: inline-table;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .home-section {
-    display: flex;
+display: flex;
     /*margin: 30px 30px;*/
     justify-content: space-around;
     padding: 75px;
@@ -63,3 +63,5 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 .modal-content {
   color: black !important;
 }
+
+
