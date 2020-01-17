@@ -1,12 +1,33 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #E3170A;
-  /*background-color: transparent;
-  transition: 0.2s background-color ease;*/
+
   display: table;
   width: 100%;
   z-index: 100;

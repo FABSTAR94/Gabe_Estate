@@ -3,6 +3,40 @@
   text-align: center;
 }
 
+.style-title h1 {
+  color: black;
+}
+
 .card {
- background-color: red;
+  margin-top: 20px;
+  border: none !important;
+  height: 250px;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 788px) {
+  .card {
+    height: 330px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    height: 250px;
+  }
+}
+
+.image-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card p {
+  text-align: center;
 }
