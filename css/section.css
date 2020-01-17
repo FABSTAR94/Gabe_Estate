@@ -2,7 +2,7 @@
     /*display: flex;*/
     margin: 20px 20px;
     padding: 50px;
-    background-color: white;
+   /* background-color: #E3170A;*/
 }
 
 .about-img {
@@ -24,6 +24,7 @@
 
 .about-text p {
   font-size: 18px;
+  color: black !important;
 
 }
 
@@ -40,13 +41,13 @@
 }
 
 .home-section {
-display: flex;
+    display: flex;
     /*margin: 30px 30px;*/
     justify-content: space-around;
     padding: 75px;
-    background: #E3170A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #463F3A;
+    margin: 20px 20px;
+
 
 }
 
@@ -63,5 +64,4 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 .modal-content {
   color: black !important;
 }
-
 

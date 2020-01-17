@@ -1,0 +1,35 @@
+.border-style h1{
+  background-color: red;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+.footer-style {
+  display: flex;
+  background-color: #312F2F;
+}
+
+.footer-style h2{
+  font-size: 20px;
+  color: white;
+}
+
+
+.footer-style h2,h3,h4 {
+  color: white !important;
+}
+
+
+.footer-style p {
+  color: white;
+}
+
+.footer-sections{
+
+
+}

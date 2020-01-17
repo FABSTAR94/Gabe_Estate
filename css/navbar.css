@@ -11,6 +11,7 @@ nav ul {
   width: 100%;
   z-index: 100;
 
+
 }
 
 nav li {
@@ -41,11 +42,6 @@ li a:hover {
   text-decoration: none;
 }
 
-.logo{
-  display: inline-block;
-  margin-left: 30px;
-  margin-right: 30px;
-  }
 
 /*.logo-phrase{
   font-size: 12px;
