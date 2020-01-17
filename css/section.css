@@ -2,7 +2,7 @@
     /*display: flex;*/
     margin: 20px 20px;
     padding: 50px;
-   /* background-color: #E3170A;*/
+   background-color: #E5D4C0;
 }
 
 .about-img {
@@ -64,4 +64,13 @@
 .modal-content {
   color: black !important;
 }
+
+
+/*section with the icons*/
+.benefits-section{
+  background-color: red;
+  margin: 20px 20px;
+  padding: 50px;
+}
+
 
