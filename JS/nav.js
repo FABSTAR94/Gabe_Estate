@@ -1,15 +1,10 @@
-$(document).ready(function() {
+const nav = document.getElementById('nav');
 
-    $(window).scroll(function() {
+  window.onscroll = function() {
+    if (window.pageYOffset > 300) {
+      nav.style.background = "rgba(227, 23, 10, 0.8)";
+    }else {
+      nav.style.background = "rgba(0, 0, 0, 0)";
+    }
 
-        var height = $('.first-container').height();
-        var scrollTop = $(window).scrollTop();
-
-        if (scrollTop >= height - 40) {
-            $('.nav-container').addClass('solid-nav');
-        } else {
-            $('.nav-container').removeClass('solid-nav');
-        }
-
-    });
-});
+}

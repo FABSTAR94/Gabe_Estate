@@ -17,9 +17,7 @@ box-shadow:none !important;
     border-color: #E3170A !important;
 }
 
-button.close{
-  color: black;
-}
+
 .form-control:hover{
 border: 1px solid #E3170A !important;
 outline: none;
@@ -32,3 +30,10 @@ box-shadow:none !important;
 }
 
 
+button.close:hover {
+  color: black !important;
+}
+
+button.close{
+  color: black !important;
+ }
