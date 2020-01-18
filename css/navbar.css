@@ -1,66 +1,30 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #E3170A;
-
-  display: table;
+.navbar {
   width: 100%;
-  z-index: 100;
-
-
+  padding: 20px;
+  top: 0px;
+  transition: .5s;
 }
 
-nav li {
-  display: table-cell
-}
-
-.list-inline {
-  list-style: none;
-  padding: 0;
-
-}
-
-.list-inline li {
+.navbar ul li {
+  list-style-type: none;
   display: inline-block;
+  padding: 10px 50px;
+  font-size: 24px;
+  cursor: pointer;
+
 }
 
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 30px 30px;
-  text-decoration: none;
+.navbar a {
+  color: white;
+
 }
 
-li a:hover {
-  background-color: white;
+
+
+.navbar a:hover {
   color: black;
   text-decoration: none;
+
 }
 
 
@@ -70,3 +34,10 @@ li a:hover {
   font-family: 'Great Vibes', cursive !important;
   display: inline-block;
 }*/
+
+
+#nav {
+  z-index: 1;
+  position: fixed;
+  /*opacity: 0.8;*/
+}
