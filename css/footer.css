@@ -1,4 +1,4 @@
-.border-style h1{
+/*.border-style h1{
   background-color: #E3170A;
   color: white;
   font-family: 'Dancing Script', cursive;
@@ -9,28 +9,105 @@
 }
 
 
+/*2nd footer*/
 
-.footer-style {
+.font-style h6{
+ font-family: 'Dancing Script', cursive;
+}
+
+  .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+
+.site-footer hr
+{
+  border-top-color: red !important;
+  opacity:0.5 !important;
+  width: 100% !important;
+}
+
+.links {
   display: flex;
-  background-color: #312F2F;
+  justify-content: flex-end;
 }
 
-.footer-style h2{
+
+.links a {
+  color: white;
+  font-size: 15px;
+  display:inline-block;
+ /* line-height:44px;
+  width:44px;
+  height:44px;
+  margin-right:8px;
+  text-align: right;*/
+}
+
+.links a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.link-wrapper {
+  padding: 0px 0px 0px 10px;
+}
+
+
+
+
+
+.footer-contact,.footer-info {
+  padding-left:0;
+  list-style:none
+}
+
+.text-justify {
+  color: white;
+}
+
+.site-footer h3 {
+  color: white;
+  font-size: 15px;
+}
+
+.site-footer h6 {
+  color: red;
   font-size: 20px;
+}
+
+.site-footer p {
   color: white;
 }
 
 
-.footer-style h2,h3,h4 {
-  color: white !important;
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .links
+  {
+    text-align:center
+  }
 }
 
 
-.footer-style p {
-  color: white;
-}
 
-.footer-sections{
-
-
-}
