@@ -51,7 +51,7 @@
 
 .links a:hover {
   text-decoration: none;
-  color: red;
+  color: #E3170A ;
 }
 
 .link-wrapper {
@@ -59,12 +59,10 @@
 }
 
 
-
-
-
 .footer-contact,.footer-info {
   padding-left:0;
-  list-style:none
+  list-style: none;
+  word-wrap: break-word;
 }
 
 .text-justify {
@@ -77,7 +75,7 @@
 }
 
 .site-footer h6 {
-  color: red;
+  color: #E3170A ;
   font-size: 20px;
 }
 
