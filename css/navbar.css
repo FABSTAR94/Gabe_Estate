@@ -2,14 +2,19 @@
   width: 100%;
   top: 0px;
   transition: .5s;
-  padding: .5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
 }
 
 .navbarbottom ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px 50px;
-  font-size: 24px;
+  padding: 15px 30px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -29,14 +34,28 @@
   padding: 20px;
   top: 0px;
   transition: .5s;
+  padding: 0rem 0rem !important;
 }
 
 .navbar ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px 50px;
-  font-size: 24px;
+  padding: 15px 30px;
+  font-size: 20px;
   cursor: pointer;
+
+}
+
+.navbar ul {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding-inline-start: 0px !important;
+}
+
+.navbarbottom ul {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding-inline-start: 0px !important;
 
 }
 
@@ -69,3 +88,14 @@
   position: fixed;
   /*opacity: 0.8;*/
 }
+
+
+
+.logo-phrase h6{
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  color: white;
+  padding: 15px 30px;
+}
+
+
