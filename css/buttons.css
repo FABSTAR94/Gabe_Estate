@@ -8,8 +8,27 @@
 }
 
 .btn-danger:hover {
-  background-color: #E3170A !important;
+  background-color: #26272b!important;
   color: white !important;
-  border-color: #E3170A;
-  opacity: 0.4 !important;
+  border-color: #26272b !important;
 }
+
+
+
+.style-button .btn-danger {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 10px 10px;
+    width: 100% !important;
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+
+ }
+
+ .style-button .btn-danger:hover {
+    background-color:#26272b!important;
+    color: white !important;
+    border-color:#26272b !important;
+ }
+

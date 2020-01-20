@@ -2,34 +2,16 @@
     /*display: flex;*/
     margin: 20px 20px;
     padding: 50px;
-   background-color: #E5D4C0;
-}
-
-.about-img {
-  width: 400px;
-  height: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
-.about-text {
-  padding-left: 30px;
-  display: inline-table;
-}
 
-.about-text h2 {
-  font-size: 30px;
-  color: #E3170A;
-}
 
-.about-text p {
-  font-size: 18px;
-  color: black !important;
 
-}
+
 
 /*home section*/
-.home-img {
+/*.home-img {
   width: 400px;
   height: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -43,13 +25,13 @@
 .home-section {
     display: flex;
     /*margin: 30px 30px;*/
-    justify-content: space-around;
+/*    justify-content: space-around;
     padding: 75px;
     background-color: #463F3A;
     margin: 20px 20px;
 
 
-}
+}*/
 
 .home-text h2 {
    font-size: 30px;
@@ -62,15 +44,98 @@
 }
 
 .modal-content {
-  color: black !important;
+  color: #26272b !important;
 }
 
 
+
+
+
+
+
+
+
+
 /*section with the icons*/
+.style-title h1{
+  font-size: 40px;
+  color: #E3170A  !important;
+}
+
+.style-body p {
+  font-size: 25px;
+  text-align: center;
+  color: #26272b !important;
+}
+
+.card p {
+  font-size: 20px;
+}
+
+
+
 .benefits-section{
-  background-color: red;
   margin: 20px 20px;
   padding: 50px;
+}
+
+
+.img-style {
+
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.img-style2 {
+
+  height: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 1000px) {
+  .img-style2 {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 788px) {
+  .img-style2 {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .img-style2 {
+    height: 230px;
+    width: 230px;
+  }
+}
+
+
+.convince-text {
+  display: inline-table;
+}
+
+.convince-text h1 {
+  font-size: 40px;
+  color: #E3170A;
+}
+
+.convince-text h3 {
+  font-size: 25px;
+  color: #26272b;
+}
+
+.convince-text h2 {
+  font-size: 30px;
+  color: #E3170A;
 }
 
 

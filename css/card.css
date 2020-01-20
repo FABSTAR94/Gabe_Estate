@@ -4,7 +4,7 @@
 }
 
 .style-title h1 {
-  color: black;
+  color: #26272b;
 }
 
 .card {
@@ -39,4 +39,5 @@
 
 .card p {
   text-align: center;
+  color: #26272b;
 }
