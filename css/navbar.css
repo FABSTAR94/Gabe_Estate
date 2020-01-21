@@ -103,6 +103,7 @@
 #nav {
   z-index: 1;
   position: fixed;
+  visibility: hidden;
   /*opacity: 0.8;*/
 }
 
@@ -110,17 +111,38 @@
   z-index: 1 !important;
   position: fixed !important;
   width: 100% !important;
+  visibility: hidden;
   /*opacity: 0.8;*/
 }
 
 .p-4 {
-  padding-top: 0px !important;
   background-color: rgba(227, 23, 10, 0.8) !important;
   margin-top: 40px;
 }
 
+#mobile-p-4 {
+  padding: 0rem 0.5rem 1.5rem 0.5rem !important;
+}
+
+#mobile-p-4 a {
+  color: white !important;
+  font-size: 15px !important;
+  text-decoration: none !important;
+}
+
+#mobile-p-4 a:hover {
+  color: black !important;
+  text-decoration: none !important;
+}
+
 .sticky-top {
-  position: absolute !important;
+  position: fixed !important;
+}
+
+.logo-phrase-mobile {
+  font-family: 'Dancing Script', cursive;
+  font-size: 10px;
+  margin-right: 5px;
 }
 
 .navbar-toggler-icon {

@@ -57,10 +57,12 @@
 
   height: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .img-style2 {
@@ -68,28 +70,88 @@
   height: 500px;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 @media screen and (max-width: 1000px) {
   .img-style2 {
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
   }
 }
 
 @media screen and (max-width: 788px) {
   .img-style2 {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .img-style2 {
-    height: 230px;
-    width: 230px;
+    height: 350px;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
   }
 }
+
+@media screen and (max-width: 425px) {
+  .img-style2 {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*first image of section*/
+
+@media screen and (max-width: 1000px) {
+  .img-style {
+    height: 400px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .img-style {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .img-style {
+    height: 300px;
+    width: 300px;
+
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .img-style {
+    height: 200px;
+    width: 200px;
+
+  }
+}
+
+
+
+
 
 
 .convince-text {

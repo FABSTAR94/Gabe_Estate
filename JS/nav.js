@@ -1,4 +1,5 @@
 const nav = document.getElementById('nav');
+const mobilenav = document.getElementById('mobile-nav');
 const navbarWrapper = document.getElementById('navbar-wrapper');
 const mobileNavbar = navbarWrapper.childNodes[1];
 const regularNavbar = navbarWrapper.childNodes[4];
@@ -28,10 +29,14 @@ window.onscroll = function() {
 
 window.onload = function() {
   if (window.outerWidth <= 425) {
-    navbarWrapper.removeChild(navbarWrapper.childNodes[3]);
-    navbarWrapper.insertBefore(mobileNavbar, navbarWrapper.childNodes[1])
+    mobilenav.style["visibility"] = "visible";
+    nav.style["visibility"] = "hidden";
+    // navbarWrapper.removeChild(navbarWrapper.childNodes[3]);
+    // navbarWrapper.insertBefore(mobileNavbar, navbarWrapper.childNodes[1])
   } else {
-    navbarWrapper.removeChild(navbarWrapper.childNodes[1]);
+    mobilenav.style["visibility"] = "hidden";
+    nav.style["visibility"] = "visible";
+    // navbarWrapper.removeChild(navbarWrapper.childNodes[1]);
   }
 }
 
