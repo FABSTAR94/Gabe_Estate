@@ -4,6 +4,10 @@
   border-radius: 3px 3px !important;
 }
 
+.modal-title {
+  text-align: center;
+}
+
 .form-control{
 border: 1px solid #26272b !important;
 outline: none;
