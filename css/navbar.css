@@ -128,11 +128,13 @@
   color: white !important;
   font-size: 15px !important;
   text-decoration: none !important;
+  cursor: pointer !important;
 }
 
 #mobile-p-4 a:hover {
   color: black !important;
   text-decoration: none !important;
+  cursor: pointer !important;
 }
 
 .sticky-top {
@@ -143,6 +145,11 @@
   font-family: 'Dancing Script', cursive;
   font-size: 10px;
   margin-right: 5px;
+}
+
+.logo-phrase-mobile a:hover {
+  color: #26272b;
+  cursor: pointer !important;
 }
 
 .navbar-toggler-icon {

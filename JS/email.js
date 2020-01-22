@@ -42,8 +42,8 @@
                 message: document.getElementById('inputMessage').value,
             }
 
-            const message = `This is my information below. \n name: ${customerInformation.name} \n email: ${customerInformation.email} \n address: ${customerInformation.address} \n city: ${customerInformation.city} \n state: ${customerInformation.state} \n zip: ${customerInformation.zip} \n message: ${customerInformation.message}`;
-             console.log(message);
+            const message = `This is my information below. \n Name: ${customerInformation.name} \n Email: ${customerInformation.email} \n Address: ${customerInformation.address} \n City: ${customerInformation.city} \n State: ${customerInformation.state} \n Zip: ${customerInformation.zip} \n Message: ${customerInformation.message}`;
+            console.log(message);
             data_js['subject'] = subject;
             data_js['text'] = message;
             const params = toParams(data_js);
