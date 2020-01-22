@@ -40,12 +40,44 @@
 }
 
 
+/*phone section*/
+.phone-container {
+  display: flex;
+  padding-top: 20px;
+}
 
+.phone-content {
+  line-height: 0.5 !important;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 10px;
+}
 
+.phone-title a{
+  text-decoration: none;
+  color: #26272b;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
 
+.phone-title a:hover {
+  text-decoration: none;
+  color: #E3170A;
+  font-weight: bold;
+}
 
-
-
+.phone-description a {
+  text-decoration: none;
+  color: #26272b;
+  font-weight: 800;
+  font-size: 24px;
+}
+.phone-description a:hover {
+  text-decoration: none;
+  color: #E3170A;
+  font-weight: bold;
+}
 
 
 /*section with the icons*/
