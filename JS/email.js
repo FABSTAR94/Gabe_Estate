@@ -8,7 +8,7 @@
         function js_onSuccess() {
             // remove this to avoid redirect
             window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
-            alert("Your message has been sent.We will get back to you within 24 hours.");
+            alert("Your information has been sent. We will get back to you shortly.");
 
         }
 
@@ -64,4 +64,8 @@
 
             return form_data.join("&");
         }
+
+
+
+
 
