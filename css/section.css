@@ -4,6 +4,21 @@
     padding: 50px;
 }
 
+@media screen and (max-width: 575px) {
+  .about-section {
+    padding: 0px !important;
+    padding-bottom: 10px;
+  }
+}
+
+
+@media screen and (max-width: 665px) {
+  .benefits-section {
+    padding: 0px !important;
+    padding-top: 30px;
+  }
+}
+
 
 
 .home-text h2 {
@@ -116,6 +131,156 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+/*text from first section*/
+@media screen and (max-width: 770px) {
+  .style-title h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .style-body p {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 665px) {
+  .style-title h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .style-body p {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+   @media screen and (max-width: 770px) {
+  .phone-container {
+    justify-content: center;
+  }
+}
+
+
+   @media screen and (max-width: 770px) {
+  .style-button .btn-danger  {
+    width: 50% !important;
+    margin-left: 25%;
+    padding: 5px 5px;
+
+  }
+}
+
+   @media screen and (max-width: 400px) {
+  .style-button .btn-danger  {
+    font-size: 15px;
+
+  }
+}
+
+
+/*text from 2nd section*/
+
+@media screen and (max-width: 770px) {
+  .convince-text h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .convince-text h3 {
+    font-size: 25px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .convince-text h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .convince-text h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .convince-text h3 {
+    font-size: 20px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .convince-text h2 {
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 490px) {
+  .convince-text h3 {
+    text-align: unset;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .convince-text h2 {
+    text-align: unset;
+  }
+}
+
+
+
+@media screen and (max-width: 370px) {
+  .convince-text h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .convince-text h3 {
+    font-size: 18px;
+
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .convince-text h2 {
+    font-size: 23px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*1st image responsiveness*/
 @media screen and (max-width: 1000px) {
