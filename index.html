@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
   <div id="navbar-wrapper">
     <div class="pos-f-t" id="mobile-nav">
       <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
@@ -70,6 +71,8 @@
         </div>
     </div>
     </div>
+
+
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -88,7 +91,8 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputEmail">Email</label>
-                                <input type="email"class="form-control" id="inputEmail" required>
+                                <input type="email" class="form-control" id="inputEmail" required>
+
                             </div>
                         </div>
                         <div class="form-group">
@@ -169,7 +173,7 @@
                             </div>
                             <div class="button-align">
                                 <div class="form-group col-md-2">
-                               <button type="submit" class="btn btn-primary" onclick="return sendForm(event)">Submit</button>
+                               <button type="submit" id="okButton" class="btn btn-primary" onclick="return sendForm(event)">Submit</button>
                                 </div>
                             </div>
                     </form>
