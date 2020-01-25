@@ -27,6 +27,13 @@ box-shadow:none !important;
   border-color: #26272b!important;
 }
 
+#success-pop-up {
+  visibility: hidden;
+}
+
+#error-pop-up {
+  visibility: hidden;
+}
 
 .form-control:hover{
 border: 1px solid #E3170A !important;
@@ -47,3 +54,34 @@ button.close:hover {
 button.close{
   color: #26272b !important;
  }
+
+
+/*alert*/
+.alert-warning {
+    color: white !important;
+    background-color: #ff000096 !important;
+    border-color: transparent !important;
+}
+
+.alert {
+    position: fixed !important;
+    bottom: 16px !important;
+    right: 16px !important;
+    z-index: 1000 !important;
+}
+
+.m-1 {
+  margin: 0.25rem !important;
+}
+
+.alert-dismissible {
+  padding-right: 4rem !important;
+}
+
+.close span:hover {
+  color: #26272b;
+}
+
+.close span {
+  color: white;
+}

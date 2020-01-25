@@ -46,3 +46,12 @@
   background-color: #26272b;
 }
 */
+
+.background-color {
+  background-color: #26272b;
+  width: 100%;
+}
+
+.card {
+  background-color: #26272b;
+}
