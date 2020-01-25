@@ -24,7 +24,7 @@
           if (
             customerInformation.name !== '' &&
             customerInformation.address !== '' &&
-            customerInformation.city !== '' &&
+           /^[a-zA-Z-\s]+$/.test(customerInformation.city) &&
             customerInformation.state !== '' &&
             /^\d{5}$|^\d{5}-\d{4}$/.test(customerInformation.zip) &&
             /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(customerInformation.email)

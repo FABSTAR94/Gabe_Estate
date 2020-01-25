@@ -13,66 +13,58 @@
 </head>
 
 <body>
-
-  <div id="navbar-wrapper">
-    <div class="pos-f-t" id="mobile-nav">
-      <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-        <div class="p-4" id="mobile-p-4">
-         <!--  <h4 class="text-white">Collapsed content</h4>
+    <div id="navbar-wrapper">
+        <div class="pos-f-t" id="mobile-nav">
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <div class="p-4" id="mobile-p-4">
+                    <!--  <h4 class="text-white">Collapsed content</h4>
           <span class="text-muted">Toggleable via the navbar brand.</span> -->
-          <br/>
-          <a href="#about">About</a>
-          <br/>
-          <br/>
-          <a href="#benefits">Benefits</a>
-          <br/>
-          <br/>
-          <a href="#contact">Contact</a>
-          <br/>
-        </div>
-      </div>
-      <nav class="navbar sticky-top mobile-navbar">
-
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-       <!--   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <br />
+                    <a href="#about">About</a>
+                    <br />
+                    <br />
+                    <a href="#benefits">Benefits</a>
+                    <br />
+                    <br />
+                    <a href="#contact">Contact</a>
+                    <br />
+                </div>
+            </div>
+            <nav class="navbar sticky-top mobile-navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
  -->
-
-
-        <div class="logo-phrase-mobile">
-          <h6><a href="#home">New Equity Realty</a></h6>
+                <div class="logo-phrase-mobile">
+                    <h6><a href="#home">New Equity Realty</a></h6>
+                </div>
+            </nav>
         </div>
-      </nav>
-    </div>
-      <div class="navbar" id="nav">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#benefits">Benefits</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="logo-phrase">
-            <h6><a href="#home">New Equity Realty</a></h6>
-          </div>
-      </div>
+        <div class="navbar" id="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="logo-phrase">
+                <h6><a href="#home">New Equity Realty</a></h6>
+            </div>
+        </div>
     </div>
     <div class="banner" style="background-image: url(images/bridge.jpeg);">
     </div>
     <div class="text-banner" id="home">
-      <div class="text-mobile">
-        <h1>Sell your House for Cash Fast!</h1>
-        <p> We Buy homes anywhere in the <span><strong>Bay Area</strong></span><br>specialized in <span><strong>Alameda</strong></span>, <span><strong>Contra Costa</span></strong>, and <span><strong> San Mateo</strong></span> Counties.</p>
-        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop"><strong>Get Cash Offer</strong>
-        </button>
+        <div class="text-mobile">
+            <h1>Sell your House for Cash Fast!</h1>
+            <p> We Buy homes anywhere in the <span><strong>Bay Area</strong></span><br>specialized in <span><strong>Alameda</strong></span>, <span><strong>Contra Costa</span></strong>, and <span><strong> San Mateo</strong></span> Counties.</p>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop"><strong>Get Cash Offer</strong>
+            </button>
         </div>
     </div>
     </div>
-
-
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -87,11 +79,11 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputName">Name</label>
-                                <input type="text" name="name" class="form-control" id="inputName" required>
+                                <input type="text" name="name" class="form-control" id="inputName" required data-error-msg="Must enter your name?">
                             </div>
                             <div class="form-group is-valid string email optional col-md-6">
                                 <label for="inputEmail">Email</label>
-                                <input class="form-control" type="email" autocomplete="email" autofocus="autofocus" id="inputEmail" placeholder="Enter a valid email address" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="user[email]" required>
+                                <input class="form-control" type="email" autocomplete="email" autofocus="autofocus" id="inputEmail" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="user[email]" required data-error-msg="The email is required in valid format!">
                             </div>
                         </div>
                         <div class="form-group">
@@ -101,63 +93,63 @@
                         <div class="form-row">
                             <div class="form-group col-md-5">
                                 <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity" required>
+                                <input type="text" class="form-control" id="inputCity" pattern="^[a-zA-Z-\s]+$" required>
                             </div>
                             <div class="form-group col-md-2">
                                 <label for="inputState">State</label>
                                 <select id="inputState" class="form-control" required>
                                     <option value="" selected="selected">Select a State</option>
-                                    <!-- <option value="Alabama">AL</option>
-                              <option value="Alaska">AK</option>
-                              <option value="Arizona">AZ</option>
-                              <option value="Arkansas">AR</option> -->
+                                    <option value="Alabama">AL</option>
+                                    <option value="Alaska">AK</option>
+                                    <option value="Arizona">AZ</option>
+                                    <option value="Arkansas">AR</option>
                                     <option value="California">CA</option>
-                                    <!-- <option value="Colorado">CO</option>
-                              <option value="Connecticut">CT</option>
-                              <option value="Delaware">DE</option>
-                              <option value="District Of Columbia">DC</option>
-                              <option value="Florida">FL</option>
-                              <option value="GA">Georgia</option>
-                              <option value="HI">Hawaii</option>
-                              <option value="ID">Idaho</option>
-                              <option value="IL">Illinois</option>
-                              <option value="IN">Indiana</option>
-                              <option value="IA">Iowa</option>
-                              <option value="KS">Kansas</option>
-                              <option value="KY">Kentucky</option>
-                              <option value="LA">Louisiana</option>
-                              <option value="ME">Maine</option>
-                              <option value="MD">Maryland</option>
-                              <option value="MA">Massachusetts</option>
-                              <option value="MI">Michigan</option>
-                              <option value="MN">Minnesota</option>
-                              <option value="MS">Mississippi</option>
-                              <option value="MO">Missouri</option>
-                              <option value="MT">Montana</option>
-                              <option value="NE">Nebraska</option>
-                              <option value="NV">Nevada</option>
-                              <option value="NH">New Hampshire</option>
-                              <option value="NJ">New Jersey</option>
-                              <option value="NM">New Mexico</option>
-                              <option value="NY">New York</option>
-                              <option value="NC">North Carolina</option>
-                              <option value="ND">North Dakota</option>
-                              <option value="OH">Ohio</option>
-                              <option value="OK">Oklahoma</option>
-                              <option value="OR">Oregon</option>
-                              <option value="PA">Pennsylvania</option>
-                              <option value="RI">Rhode Island</option>
-                              <option value="SC">South Carolina</option>
-                              <option value="SD">South Dakota</option>
-                              <option value="TN">Tennessee</option>
-                              <option value="TX">Texas</option>
-                              <option value="UT">Utah</option>
-                              <option value="VT">Vermont</option>
-                              <option value="VA">Virginia</option>
-                              <option value="WA">Washington</option>
-                              <option value="WV">West Virginia</option>
-                              <option value="WI">Wisconsin</option>
-                              <option value="WY">Wyoming</option> -->
+                                    <option value="Colorado">CO</option>
+                                    <option value="Connecticut">CT</option>
+                                    <option value="Delaware">DE</option>
+                                    <option value="District Of Columbia">DC</option>
+                                    <option value="Florida">FL</option>
+                                    <option value="Georgia">GA</option>
+                                    <option value="Hawaii">HI</option>
+                                    <option value="Idaho">ID</option>
+                                    <option value="Illinois">IL</option>
+                                    <option value="Indiana">IN</option>
+                                    <option value="Iowa">IA</option>
+                                    <option value="Kansas">KS</option>
+                                    <option value="Kentucky">KY</option>
+                                    <option value="Louisiana">LA</option>
+                                    <option value="Maine">ME</option>
+                                    <option value="Maryland">MD</option>
+                                    <option value="Massachusetts">MA</option>
+                                    <option value="Michigan">MI</option>
+                                    <option value="Minnesota">MN</option>
+                                    <option value="Mississippi">MS</option>
+                                    <option value="Missouri">MO</option>
+                                    <option value="Montana">MT</option>
+                                    <option value="Nebraska">NE</option>
+                                    <option value="Nevada">NV</option>
+                                    <option value="New Hampshire">NH</option>
+                                    <option value="New Jersey">NJ</option>
+                                    <option value="New Mexico">NM</option>
+                                    <option value="New York">NY</option>
+                                    <option value="North Carolina">NC</option>
+                                    <option value="North Dakota">ND</option>
+                                    <option value="Ohio">OH</option>
+                                    <option value="Oklahoma">OK</option>
+                                    <option value="Oregon">OR</option>
+                                    <option value="Pennsylvania">PA</option>
+                                    <option value="Rhode Island">RI</option>
+                                    <option value="South Carolina">SC</option>
+                                    <option value="South Dakota">SD</option>
+                                    <option value="Tennessee">TN</option>
+                                    <option value="Texas">TX</option>
+                                    <option value="Utah">UT</option>
+                                    <option value="Vermont">VT</option>
+                                    <option value="Virginia">VA</option>
+                                    <option value="Washington">WA</option>
+                                    <option value="West Virginia">WV</option>
+                                    <option value="Wisconsin">WI</option>
+                                    <option value="Wyoming">WY</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-5">
@@ -166,13 +158,11 @@
                             </div>
                             <div class="form-group col-12">
                                 <label for="inputMessage">Any questions or concerns?</label>
-                                <br>
-                                <textarea id="inputMessage" class="form-control" name="inputMessage" rows="4" cols="56">
-                                </textarea>
+                                <textarea id="inputMessage" class="form-control" name="inputMessage" rows="4"></textarea>
                             </div>
                             <div class="button-align">
                                 <div class="form-group col-md-2">
-                               <button type="submit" id="okButton" class="btn btn-primary" onclick="sendForm(event)" >Submit</button>
+                                    <button type="submit" id="okButton" class="btn btn-primary" onclick="sendForm(event)">Submit</button>
                                 </div>
                             </div>
                     </form>
@@ -181,32 +171,29 @@
         </div>
     </div>
     </div>
-
-<div class="alert alert-warning alert-dismissible fade show m-1" id="success-pop-up" role="alert">
-    Your information has been sent.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">×</span>
-    </button>
-  </div>
-  <div class="alert alert-warning alert-dismissible fade show m-1" id="error-pop-up" role="alert">
-    ERROR! Your information was not sent. Please try again.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">×</span>
-    </button>
-  </div>
-
-<!-- about section -->
+    <div class="alert alert-warning alert-dismissible fade show m-1" id="success-pop-up" role="alert">
+        Your information has been sent.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="alert alert-warning alert-dismissible fade show m-1" id="error-pop-up" role="alert">
+        ERROR! Your information was not sent. Please try again.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
     <div id="about" class="benefits-section">
         <div class="container">
             <div class="style-title">
                 <h1><strong>Welcome to New Equity Realty</strong></h1>
             </div>
             <div class="style-body">
-            <p>We are a local Bay Area Company that can buy your house in
-              any condition. It does not matter how many repairs or issues your
-              house has, we will buy it in cash with as little hassle for you as
-              possible!</p>
-              <img class="img-style" src="images/fs.jpg" alt="buyer profile">
+                <p>We are a local Bay Area Company that can buy your house in
+                    any condition. It does not matter how many repairs or issues your
+                    house has, we will buy it in cash with as little hassle for you as
+                    possible!</p>
+                <img class="img-style" src="images/fs.jpg" alt="buyer profile">
             </div>
             <div class="row" id="benefits">
                 <div class="col-xs-12 col-sm-6 col-md-3">
@@ -247,73 +234,43 @@
             </div>
         </div>
     </div>
-
-
-
-
-<!--  section -->
-      <div id="contact" class="section">
+    <div id="contact" class="section">
         <div class="about-section">
             <div class="flex-container">
                 <div class="row">
                     <div class="col-md-5">
-                      <div class="convince-text">
-                        <h1><strong>Are you convinced yet?</strong></h1>
-                        <h3>We buy homes no matter the condition.</h3>
-                       <h3>We buy homes in all types of neighborhoods.</h3>
-                       <h3>We buy homes built in all types of structures.</h3>
-                       <h2><strong>So what are you waiting for? <br>Get your cash offer now!<br> Just click the button below ↓</strong></h2>
+                        <div class="convince-text">
+                            <h1><strong>Are you convinced yet?</strong></h1>
+                            <h3>We buy homes no matter the condition.</h3>
+                            <h3>We buy homes in all types of neighborhoods.</h3>
+                            <h3>We buy homes built in all types of structures.</h3>
+                            <h2><strong>So what are you waiting for? <br>Get your cash offer now!<br> Just click the button below ↓</strong></h2>
                         </div>
                         <div class="style-button">
-        <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">Get Cash Offer</a>
-      </div>
-                  <div class="phone-container">
-                    <div class="phone-img">
-                      <img src="png/cellphone.png" alt="cellphone" width="70">
+                            <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">Get Cash Offer</a>
+                        </div>
+                        <div class="phone-container">
+                            <div class="phone-img">
+                                <img src="png/cellphone.png" alt="cellphone" width="70">
+                            </div>
+                            <div class="phone-content">
+                                <p class="phone-title">
+                                    <a href="tel:+16502557250">Or call us 24/7</a>
+                                </p>
+                                <p class="phone-description">
+                                    <a href="tel:+16502557250">650-255-7250</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                      <div class="phone-content">
-                           <p class="phone-title">
-                              <a href="tel:+16502557250">Or call us 24/7</a>
-                            </p>
-                            <p class="phone-description">
-                              <a href="tel:+16502557250">650-255-7250</a>
-                            </p>
-                       </div>
-                  </div>
-                  </div>
                     <div class="col-md-7">
-                      <img class="img-style2" src="images/cfk.jpg" alt="buyer profile">
+                        <img class="img-style2" src="images/cfk.jpg" alt="buyer profile">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- footer -->
-    <!-- <div id="contact" class="section">
-<footer>
-  <div class="border-style">
-<h1>New Equity Realty</h1>
-</div>
- -->
-
-
-
- <!-- footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
