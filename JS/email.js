@@ -7,15 +7,31 @@
 
         function js_onSuccess() {
             // remove this to avoid redirect
-            window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
-            alert("Your information has been sent. We will get back to you shortly.");
-
+            // window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+            $("#staticBackdrop").modal("hide");
+            const successPopUp = document.getElementById('success-pop-up');
+            successPopUp.style["visibility"] = "visible";
         }
 
         function js_onError(error) {
             // remove this to avoid redirect
-            window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
-            alert(`There has been an error ${error}`);
+            $("#staticBackdrop").modal("hide");
+            const successPopUp = document.getElementById('error-pop-up');
+            successPopUp.style["visibility"] = "visible";
+        }
+
+        function validation(customerInformation) {
+          if (
+            customerInformation.name !== '' &&
+            customerInformation.address !== '' &&
+            customerInformation.city !== '' &&
+            customerInformation.state !== '' &&
+            /^\d{5}$|^\d{5}-\d{4}$/.test(customerInformation.zip) &&
+            /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(customerInformation.email)
+            ) {
+            return true;
+          }
+          return false;
         }
 
         function sendForm(event) {
@@ -24,8 +40,7 @@
             request.onreadystatechange = function() {
                 if (request.readyState == 4 && request.status == 200) {
                     js_onSuccess();
-                } else
-                if(request.readyState == 4) {
+                } else if (request.readyState == 4) {
                     js_onError(request.response);
                 }
             };
@@ -42,18 +57,22 @@
                 message: document.getElementById('inputMessage').value,
             }
 
-            const message = `This is my information below. \n Name: ${customerInformation.name} \n Email: ${customerInformation.email} \n Address: ${customerInformation.address} \n City: ${customerInformation.city} \n State: ${customerInformation.state} \n Zip: ${customerInformation.zip} \n Message: ${customerInformation.message}`;
-            console.log(message);
-            data_js['subject'] = subject;
-            data_js['text'] = message;
-            const params = toParams(data_js);
+            if (!validation(customerInformation)) {
+              console.log("invalid info");
+              return false;
+            } else {
+              const message = `This is my information below. \n Name: ${customerInformation.name} \n Email: ${customerInformation.email} \n Address: ${customerInformation.address} \n City: ${customerInformation.city} \n State: ${customerInformation.state} \n Zip: ${customerInformation.zip} \n Message: ${customerInformation.message}`;
+              console.log(message);
+              data_js['subject'] = subject;
+              data_js['text'] = message;
+              const params = toParams(data_js);
 
-            request.open("POST", "https://postmail.invotes.com/send", true);
-            request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+              request.open("POST", "https://postmail.invotes.com/send", true);
+              request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-            request.send(params);
-
-            event.preventDefault();
+              request.send(params);
+              event.preventDefault();
+            }
         }
 
         function toParams(data_js) {
@@ -67,8 +86,6 @@
 
 
 
-
-// email validation
 
 
 
