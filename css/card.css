@@ -35,11 +35,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #26272b;
 }
 
 .card p {
   text-align: center;
-  color: #26272b;
+  color: white;
+  background-color: #26272b;
+
 }
 
 /*.card-color {
@@ -53,5 +56,12 @@
 }
 
 .card {
+  background-color: #26272b !important;
+}
+
+
+
+/*card*/
+#benefits {
   background-color: #26272b;
 }
