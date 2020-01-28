@@ -10,6 +10,174 @@
     <link rel="shortcut icon" type="image/png" href="png/black-home.png">
     <title>GabeEstate</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+   const form_id_js = "javascript_form";
+
+        const data_js = {
+            "access_token": "5q0f6z0u28ro0caafydnvk1i"
+        };
+
+        function js_onSuccess() {
+            // remove this to avoid redirect
+            // window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+            $("#staticBackdrop").modal("hide");
+            const successPopUp = document.getElementById('success-pop-up');
+            successPopUp.style["visibility"] = "visible";
+        }
+
+        function js_onError(error) {
+            // remove this to avoid redirect
+            $("#staticBackdrop").modal("hide");
+            const successPopUp = document.getElementById('error-pop-up');
+            successPopUp.style["visibility"] = "visible";
+        }
+
+        function validation(customerInformation) {
+          if (
+            customerInformation.name !== '' &&
+            customerInformation.address !== '' &&
+           /^[a-zA-Z-\s]+$/.test(customerInformation.city) &&
+            customerInformation.state !== '' &&
+            /^\d{5}$|^\d{5}-\d{4}$/.test(customerInformation.zip) &&
+            /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(customerInformation.email)
+            ) {
+            return true;
+          }
+          return false;
+        }
+
+        function sendForm(event) {
+            const request = new XMLHttpRequest();
+
+            request.onreadystatechange = function() {
+                if (request.readyState == 4 && request.status == 200) {
+                    js_onSuccess();
+                } else if (request.readyState == 4) {
+                    js_onError(request.response);
+                }
+            };
+
+            const subject = "Faviola, You have a new client interested!";
+
+            const customerInformation = {
+                name: document.getElementById('inputName').value,
+                email: document.getElementById('inputEmail').value,
+                address: document.getElementById('inputAddress').value,
+                city: document.getElementById('inputCity').value,
+                state: document.getElementById('inputState').value,
+                zip: document.getElementById('inputZip').value,
+                message: document.getElementById('inputMessage').value,
+            }
+
+            if (!validation(customerInformation)) {
+              console.log("invalid info");
+              return false;
+            } else {
+              const message = `This is my information below. \n Name: ${customerInformation.name} \n Email: ${customerInformation.email} \n Address: ${customerInformation.address} \n City: ${customerInformation.city} \n State: ${customerInformation.state} \n Zip: ${customerInformation.zip} \n Message: ${customerInformation.message}`;
+              console.log(message);
+              data_js['subject'] = subject;
+              data_js['text'] = message;
+              const params = toParams(data_js);
+
+              request.open("POST", "https://postmail.invotes.com/send", true);
+              request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+              request.send(params);
+              event.preventDefault();
+            }
+        }
+
+        function toParams(data_js) {
+            const form_data = [];
+            for ( const key in data_js ) {
+                form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+            }
+
+            return form_data.join("&");
+        }
+
+
+
+// nav
+const nav = document.getElementById('nav');
+const mobilenav = document.getElementById('mobile-nav');
+const navbarWrapper = document.getElementById('navbar-wrapper');
+const mobileNavbar = navbarWrapper.childNodes[1];
+const regularNavbar = navbarWrapper.childNodes[4];
+
+window.onscroll = function() {
+  if (window.pageYOffset > 550) {
+    nav.style.background = "rgba(227, 23, 10, 0.8)";
+    nav.classList.add('navbarbottom');
+    nav.classList.remove('navbar');
+  } else {
+    nav.style.background = "rgba(0, 0, 0, 0)";
+    nav.classList.add('navbar');
+    nav.classList.remove('navbarbottom');
+  }
+}
+
+
+window.onload = function() {
+  if (window.outerWidth <= 425) {
+    mobilenav.style["visibility"] = "visible";
+    nav.style["visibility"] = "hidden";
+    // navbarWrapper.removeChild(navbarWrapper.childNodes[3]);
+    // navbarWrapper.insertBefore(mobileNavbar, navbarWrapper.childNodes[1])
+  } else {
+    mobilenav.style["visibility"] = "hidden";
+    nav.style["visibility"] = "visible";
+    // navbarWrapper.removeChild(navbarWrapper.childNodes[1]);
+  }
+}
+
+
+// add smooth on a links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
 </head>
 
 <body>
@@ -320,8 +488,8 @@
                 </div>
             </div>
     </footer>
-    <script type="text/javascript" src="js/email.js"></script>
-    <script type="text/javascript" src="js/nav.js"></script>
+<!--     <script type="text/javascript" src="js/email.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
