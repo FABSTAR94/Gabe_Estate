@@ -111,7 +111,7 @@
   z-index: 1 !important;
   position: fixed !important;
   width: 100% !important;
-  /*visibility: hidden;*/
+  visibility: hidden;
   /*opacity: 0.8;*/
 }
 
