@@ -43,7 +43,7 @@
 
 
 .navbar {
-  visibility: hidden;
+  /*visibility: hidden;*/
   width: 100%;
   padding: 20px;
   top: 0px;
