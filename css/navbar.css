@@ -101,10 +101,12 @@
 
 
 #nav {
+  /*remove background-color and hide once u fix on heroku*/
   z-index: 1;
   position: fixed;
   /*visibility: hidden;*/
-  /*opacity: 0.8;*/
+  opacity: 0.8;
+  background-color: red;
 }
 
 #mobile-nav {
