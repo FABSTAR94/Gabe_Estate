@@ -43,7 +43,7 @@
 
 
 .navbar {
-  /*visibility: hidden;*/
+  visibility: hidden;
   width: 100%;
   padding: 20px;
   top: 0px;
@@ -101,12 +101,11 @@
 
 
 #nav {
-  /*remove background-color and hide once u fix on heroku*/
+
   z-index: 1;
   position: fixed;
-  /*visibility: hidden;*/
+  visibility: hidden;
   opacity: 0.8;
-  background-color: red;
 }
 
 #mobile-nav {
