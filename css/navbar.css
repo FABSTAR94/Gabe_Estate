@@ -43,7 +43,7 @@
 
 
 .navbar {
-  visibility: hidden;
+  /*visibility: hidden;*/
   width: 100%;
   padding: 20px;
   top: 0px;
@@ -90,7 +90,7 @@
 
 
 .pos-f-t {
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 /*.logo-phrase{
   font-size: 12px;
