@@ -435,10 +435,21 @@
 
 /*card font size*/
 @media screen and (max-width: 680px) {
-  .card p{
-    font-size: 18px;
+  .image-holder img{
+    width: 75px !important;
   }
 }
+
+
+@media screen and (max-width: 500px) {
+  .card {
+    height: 200px;
+  }
+}
+
+
+
+
 
 
 

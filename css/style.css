@@ -7,8 +7,8 @@
 @import url("card.css");
 
 body {
-font-family: "Crete Round", "Montserrat", serif !important;
-/*font-family: "Montserrat",Sans-serif;*/
+/*font-family: "Crete Round", "Montserrat", serif !important;*/
+font-family: serif;
 letter-spacing: 1px;
 }
 
