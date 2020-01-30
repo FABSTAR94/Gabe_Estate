@@ -2,7 +2,8 @@
         const form_id_js = "javascript_form";
 
         const data_js = {
-            "access_token": "5q0f6z0u28ro0caafydnvk1i"
+            "access_token": "kiotyo1co9fq2c0djri4h46p"
+            // fav token "5q0f6z0u28ro0caafydnvk1i"
         };
 
         function js_onSuccess() {

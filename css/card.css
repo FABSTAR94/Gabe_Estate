@@ -13,6 +13,10 @@
   height: 250px;
 }
 
+.padding-btm {
+  padding-bottom: 10px;
+}
+
 @media screen and (max-width: 1000px) {
   .card {
     height: 300px;
