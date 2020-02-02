@@ -84,13 +84,13 @@
 }
 
 .copyright-text a{
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .copyright-text a:hover{
-  text-decoration: none;
-  color: #E3170A;
+  text-decoration: none !important;
+  color: #E3170A !important;
 }
 
 
