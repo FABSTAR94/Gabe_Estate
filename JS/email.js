@@ -46,7 +46,7 @@
                 }
             };
 
-            const subject = "Faviola, You have a new client interested!";
+            const subject = "Gabriel, You have a new client interested!";
 
             const customerInformation = {
                 name: document.getElementById('inputName').value,
