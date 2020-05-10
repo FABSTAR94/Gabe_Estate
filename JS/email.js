@@ -2,7 +2,7 @@
         const form_id_js = "javascript_form";
 
         const data_js = {
-            "access_token": "5a80b85ra874f3hx22inhr5v";
+            "access_token": "5a80b85ra874f3hx22inhr5v"
         };
 
         function js_onSuccess() {
